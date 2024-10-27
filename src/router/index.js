@@ -11,7 +11,7 @@ export default new Router({
       name: 'Index',
       component: () => import('@/views/index'),
       meta: {
-        title: '💖与子成说💖'
+        title: '💖臭鱼和臭宁的恋爱空间💖'
       }
     },
     {

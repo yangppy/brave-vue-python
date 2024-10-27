@@ -1,12 +1,19 @@
 <template>
   <div id="app">
-    <router-view v-wechat-title="$route.meta.title" />
+    <HeartEffect>
+      <router-view v-wechat-title="$route.meta.title" />
+    </HeartEffect>
   </div>
 </template>
 
 <script>
+import HeartEffect from './components/HeartEffect.vue'
 
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    HeartEffect
+  }
 }
 </script>
+

@@ -1,3 +1,4 @@
+@import url('./css2.css');
 ol,p {
     margin: 0;
 }
@@ -39,11 +40,12 @@ ol{
 	top: 0;
 	transform: rotate(-45deg);
 	width: 30px;
-}
-
-.lover:hover .heart {
 	animation: heartbeat 1s infinite;
 }
+
+/* .lover:hover .heart {
+	animation: heartbeat 1s infinite;
+} */
 
 .heart:before, .heart:after {
 	content: "";
@@ -65,14 +67,17 @@ ol{
 }
 
 @keyframes heartbeat {
-	0% {
-		transform: scale( 1) rotate(-45deg);
+	0%, 100% {
+		transform: scale(1) rotate(-45deg);
 	}
-	20% {
-		transform: scale( 1.25) rotate(-45deg);
+	25% {
+		transform: scale(1.3) rotate(-45deg);
 	}
-	40% {
-		transform: scale( 1.5) rotate(-45deg);
+	50% {
+		transform: scale(1.5) rotate(-45deg);
+	}
+	75% {
+		transform: scale(1.3) rotate(-45deg);
 	}
 }
 
@@ -386,3 +391,41 @@ ol{
 	100% { transform: rotate(360deg); }
   }
   
+  body {
+	cursor: url('../assets/cursor.cur'), auto;
+  }
+  
+  /* 引入 Google Fonts */
+
+.countdownD {
+    font-family: 'Roboto', sans-serif; /* 使用自定义字体 */
+    font-size: 2.5em; /* 增大字体大小 */
+    font-weight: bold; /* 加粗字体 */
+    line-height: 1.2; /* 增加行高 */
+    color: #3AF; /* 设置字体颜色 */
+}
+
+.countdownH {
+    font-family: 'Roboto', sans-serif; /* 使用自定义字体 */
+    font-size: 2.5em; /* 增大字体大小 */
+    font-weight: bold; /* 加粗字体 */
+    line-height: 1.2; /* 增加行高 */
+    color: #3AF; /* 设置字体颜色 */
+}
+.countdownM {
+    font-family: 'Roboto', sans-serif; /* 使用自定义字体 */
+    font-size: 2.5em; /* 增大字体大小 */
+    font-weight: bold; /* 加粗字体 */
+    line-height: 1.2; /* 增加行高 */
+    color: #3AF; /* 设置字体颜色 */
+}
+.countdownS {
+    font-family: 'Roboto', sans-serif; /* 使用自定义字体 */
+    font-size: 2.5em; /* 增大字体大小 */
+    font-weight: bold; /* 加粗字体 */
+    line-height: 1.2; /* 增加行高 */
+    color: #3AF; /* 设置字体颜色 */
+}
+#site_runtime {
+    user-select: none; 
+}
